@@ -9,4 +9,40 @@
     <welcome-file>default.htm</welcome-file>
     <welcome-file>default.jsp</welcome-file>
   </welcome-file-list>
+  
+  <servlet>
+    <servlet-name>CompareServlet</servlet-name>
+    <servlet-class>com.hpe.devops.test.CompareServlet</servlet-class>
+  </servlet> 
+  <servlet-mapping>
+    <servlet-name>CompareServlet</servlet-name>
+    <url-pattern>/compare</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>CloneProjectServlet</servlet-name>
+    <servlet-class>com.hpe.devops.test.CloneProjectServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>CloneProjectServlet</servlet-name>
+    <url-pattern>/cloneProject</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>ViewCommittedLogServlet</servlet-name>
+    <servlet-class>com.hpe.devops.test.ViewCommittedLogServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>ViewCommittedLogServlet</servlet-name>
+    <url-pattern>/viewCommittedLog</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>DiffVersionServlet</servlet-name>
+    <servlet-class>com.hpe.devops.test.DiffVersionServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>DiffVersionServlet</servlet-name>
+    <url-pattern>/diffVersion</url-pattern>
+  </servlet-mapping>
 </web-app>

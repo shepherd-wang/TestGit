@@ -17,6 +17,7 @@ webdiff服务器地址：<%=request.getParameter("webdiffURL")%>
 <hr/>
 <center>
 <h3>文件内容</h3>
+<%=request.getParameter("newVersionNo").toString().substring(0, 40)%>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<%=request.getParameter("oldVersionNo").toString().substring(0, 40)%>
 <iframe width="1300px" height="600px" id="viewDiffIFrame" name="viewDiffIFrame" src="" scrolling="auto">
 </iframe>
 </center>

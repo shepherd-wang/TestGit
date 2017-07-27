@@ -7,7 +7,7 @@
 </head>
 <body>
 <h3><a href="callShellTest.jsp" target="_blank">调用Shell脚本测试</a></h3>
-<h3><a href="viewDiffTest.jsp" target="_blank">文件对比</a></h3>
+<h3><a href="viewDiffTest.jsp" target="_blank">文件对比测试</a></h3>
 
 <h3><a href="cloneProject.jsp" target="_blank">Clone工程</a></h3>
 <h3><a href="viewProject.jsp" target="_blank">查看提交日志</a></h3>

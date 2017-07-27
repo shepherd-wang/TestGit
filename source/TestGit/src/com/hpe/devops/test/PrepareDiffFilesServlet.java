@@ -40,10 +40,10 @@ public class PrepareDiffFilesServlet extends HttpServlet {
         strCmd = shellPath + " " + workPath + " " + tempPath + projectName + " " + newCommittedLogNo + " " + oldCommittedLogNo;//待调用shell脚本  
         System.out.println("strCmd=" + strCmd);
         process = Runtime.getRuntime().exec(strCmd);//通过执行cmd命令
-        strCon = new BufferedReader(new InputStreamReader(process.getInputStream()));  
-        while ((line = strCon.readLine()) != null) {  
-            System.out.println("Shell Output: " + line);  
-        }
+//        strCon = new BufferedReader(new InputStreamReader(process.getInputStream()));  
+//        while ((line = strCon.readLine()) != null) {  
+//            System.out.println("Shell Output: " + line);  
+//        }
         request.getRequestDispatcher("/webdiffHttpServer.jsp").forward(request, response);
     }
 

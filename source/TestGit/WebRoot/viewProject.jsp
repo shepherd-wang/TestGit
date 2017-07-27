@@ -12,7 +12,7 @@
 <form action="viewCommittedLog" method="post" target="_self">
 工程名称：<input type="text" name="projectName" value="<%=request.getAttribute("projectName")%>" size="100"/><br>
 本地工作目录：<input type="text" name="workPath" value="<%=request.getAttribute("workTreeAbsolutePath")%>" size="100"/><br>
-本地仓库路径：<input type="text" name="repositoryPath" value="<%=request.getAttribute("directoryAbsolutePath")%>" size="100"/><br>
+本地仓库路径：<input type="text" name="repositoryPath" value="<%=request.getAttribute("directoryAbsolutePath")%>" size="100"/><br><br>
 <input type="submit" value="查看提交日志">
 </form>
 <hr/>
@@ -21,7 +21,7 @@
 本地工作目录：<input type="text" name="workPath" value="<%=request.getAttribute("workPath")%>" size="100"/><br>
 本地仓库路径：<input type="text" name="repositoryPath" value="<%=request.getAttribute("repositoryPath")%>" size="100"/><br>
 新版本号：<input type="text" name="newVersionNo" value="" size="100"/>(Version_TreeName)<br>
-旧版本号：<input type="text" name="oldVersionNo" value="" size="100"/>(Version_TreeName)<br>
+旧版本号：<input type="text" name="oldVersionNo" value="" size="100"/>(Version_TreeName)<br><br>
 <input type="submit" value="比较版本差异">
 </form>
 <hr/>

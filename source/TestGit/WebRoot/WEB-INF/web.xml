@@ -47,6 +47,15 @@
   </servlet-mapping>
   
   <servlet>
+    <servlet-name>PrepareDiffFilesServlet</servlet-name>
+    <servlet-class>com.hpe.devops.test.PrepareDiffFilesServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>PrepareDiffFilesServlet</servlet-name>
+    <url-pattern>/prepareDiffFiles</url-pattern>
+  </servlet-mapping>
+  
+  <servlet>
     <servlet-name>WebdiffHttpServerServlet</servlet-name>
     <servlet-class>com.hpe.devops.test.WebdiffHttpServerServlet</servlet-class>
   </servlet>

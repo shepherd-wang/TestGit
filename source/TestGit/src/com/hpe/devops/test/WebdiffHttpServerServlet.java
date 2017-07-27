@@ -5,10 +5,11 @@ import java.io.IOException;
 import java.io.InputStreamReader;
 
 import javax.servlet.ServletException;
+import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class WebdiffHttpServerServlet {
+public class WebdiffHttpServerServlet extends HttpServlet {
 
 	private static final long serialVersionUID = 1L;
 
@@ -35,10 +36,12 @@ public class WebdiffHttpServerServlet {
         strCmd = shellPath + " " + serverHostname + " " + serverPort;//待调用shell脚本  
         System.out.println("strCmd=" + strCmd);
         process = Runtime.getRuntime().exec(strCmd);//通过执行cmd命令
+        
         strCon = new BufferedReader(new InputStreamReader(process.getInputStream()));  
         while ((line = strCon.readLine()) != null) {  
-            System.out.println("Shell Output:\n" + line);  
+            System.out.println("Webdiff Http Server: " + line);  
         }
+        
         request.getRequestDispatcher("/webdiffHttpServer.jsp").forward(request, response);
     }
 

@@ -13,12 +13,10 @@
 Webdiff Server主机名:<input type="text" name="serverHostname" value="diff.vm1.devops" size="100"/>（域名或IP地址）<br><br>
 Webdiff Server端口号:<input type="text" name="serverPort" value="8000" size="100"/><br><br>
 <input type="submit" value="启动">
-<hr/>
 </form>
-<hr/>
+&nbsp;&nbsp;&nbsp;&nbsp;
 <form action="http://diff.vm1.devops:8000/kill" method="post" target="_blank">
 <input type="submit" value="停止">
-<hr/>
 </form>
 </body>
 </html>

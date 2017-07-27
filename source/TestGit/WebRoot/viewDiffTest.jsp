@@ -3,10 +3,10 @@
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-<title>文件对比</title>
+<title>文件对比测试</title>
 </head>
 <body>
-<h3>文件对比</h3>
+<h3>文件对比测试</h3>
 webdiff服务器地址：<%=request.getParameter("gitServerURL")%>
 <form action="<%=request.getParameter("gitServerURL")%>" method="post" target="viewDiffIFrame">
 <input type="hidden" name="idx" id="idx" value="0" size="100"/><br><br>

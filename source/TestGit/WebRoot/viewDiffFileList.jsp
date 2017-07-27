@@ -13,8 +13,8 @@
 工程名称：<input type="text" name="projectName" value="<%=request.getAttribute("projectName")%>" size="100"/><br>
 本地工作目录：<input type="text" name="workPath" value="<%=request.getAttribute("workPath")%>" size="100"/><br>
 本地仓库路径：<input type="text" name="repositoryPath" value="<%=request.getAttribute("repositoryPath")%>" size="100"/><br>
-新版本号(TreeName)：<input type="text" name="newVersionNo" value="<%=request.getAttribute("newVersionNo")%>" size="100"/><br>
-旧版本号(TreeName)：<input type="text" name="oldVersionNo" value="<%=request.getAttribute("oldVersionNo")%>" size="100"/><br>
+新版本号：<input type="text" name="newVersionNo" value="<%=request.getAttribute("newVersionNo")%>" size="100"/>(Version_TreeName)<br>
+旧版本号：<input type="text" name="oldVersionNo" value="<%=request.getAttribute("oldVersionNo")%>" size="100"/>(Version_TreeName)<br>
 <input type="submit" value="查看源文件差异">
 </form>
 <hr/>

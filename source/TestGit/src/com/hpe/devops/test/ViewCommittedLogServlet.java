@@ -70,8 +70,7 @@ public class ViewCommittedLogServlet extends HttpServlet {
 		    	//System.out.println("EmailAddress:"+ revCommit.getAuthorIdent().getEmailAddress());
 		    	System.out.println("When:"+ revCommit.getAuthorIdent().getWhen());
 		    	System.out.println("-----------------------------------------------------------------");
-		    	committedLogInfo.append("Version: " + revCommit.getName() + "<br>");
-		    	committedLogInfo.append("TreeName: " + revCommit.getTree().getName() + "<br>");
+		    	committedLogInfo.append("Version_TreeName: " + revCommit.getName() + "_" + revCommit.getTree().getName() + "<br>");
 		    	committedLogInfo.append("Message: " + revCommit.getShortMessage() + "<br>");
 		    	committedLogInfo.append("Author: " + revCommit.getAuthorIdent().getName() + "<br>");
 		    	committedLogInfo.append("Time: " + revCommit.getAuthorIdent().getWhen() + "<br>");

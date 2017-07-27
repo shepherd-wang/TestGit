@@ -46,8 +46,8 @@ public class DiffVersionServlet extends HttpServlet {
 		try {
 			FileRepositoryBuilder builder = new FileRepositoryBuilder();
 			Repository repository = builder.setGitDir(new File(repositoryPath)).readEnvironment().findGitDir().build();//"C:\\Users\\Shepherd\\test\\.git";
-            ObjectId newHead = repository.resolve(newVersionNo);
-            ObjectId oldHead = repository.resolve(oldVersionNo);
+            ObjectId newHead = repository.resolve(newVersionNo.substring(41));
+            ObjectId oldHead = repository.resolve(oldVersionNo.substring(41));
 			
             ObjectReader reader = repository.newObjectReader();
     		CanonicalTreeParser newTreeIter = new CanonicalTreeParser();

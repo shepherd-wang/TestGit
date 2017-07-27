@@ -45,4 +45,13 @@
     <servlet-name>DiffVersionServlet</servlet-name>
     <url-pattern>/diffVersion</url-pattern>
   </servlet-mapping>
+  
+  <servlet>
+    <servlet-name>WebdiffHttpServerServlet</servlet-name>
+    <servlet-class>com.hpe.devops.test.WebdiffHttpServerServlet</servlet-class>
+  </servlet>
+  <servlet-mapping>
+    <servlet-name>WebdiffHttpServerServlet</servlet-name>
+    <url-pattern>/webdiffHttpServer</url-pattern>
+  </servlet-mapping>
 </web-app>
